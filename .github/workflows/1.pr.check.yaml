@@ -50,7 +50,7 @@ jobs:
         run: |
           pytest --tracing=retain-on-failure
 
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v6
         if: ${{ !cancelled() }}
         with:
           name: playwright-traces
