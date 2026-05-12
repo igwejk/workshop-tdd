@@ -27,7 +27,7 @@ jobs:
           submodules: recursive
 
       - name: Dependency Review
-        uses: actions/dependency-review-action@v4
+        uses: actions/dependency-review-action@v5
         with:
           config-file: >-
             ./.github/dependency-review-config.yml
